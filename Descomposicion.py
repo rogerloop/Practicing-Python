@@ -1,15 +1,25 @@
 """ Realiza una función que realice la descomposición en
 factores de un número. Deberá devolver una lista con
-def factorial(x):
-if x>1:
 los factores de dicho número. Recordad que la
-return x*factorial(x-1)
 descomposición en factores de un número consiste
-else:
 en hallar el conjunto de números primos cuya
-return 1
-multiplicación dé dicho número como resultado. 
-"""
+multiplicación dé dicho número como resultado."""
+
+def factores_primos(numero):
+    factores = []
+    divisor = 2
+    while numero > 1:
+        while numero % divisor == 0:
+            factores.append(divisor)
+            numero //= divisor
+        divisor += 1
+    return factores
+
+
+
+# Ejemplo de uso
+numero = 12
+print(f"Factores primos de {numero}: {factores_primos(numero)}")
 
 
 
