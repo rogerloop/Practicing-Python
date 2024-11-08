@@ -21,6 +21,6 @@ def factores_primos(numero):
 numero = 12
 print(f"Factores primos de {numero}: {factores_primos(numero)}")
 
-
+# Test github
 
 
