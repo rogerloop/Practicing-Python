@@ -1,8 +1,8 @@
 class Producto:
 
-    # Construtor de la clase Producto i inicialización para los objetos producto
-    # Construyo la clase Producto con atributos privados usando __xxxx  para conseguir un buen encapsulamiento
-    # Con esta implementación evito accesos indeseados desde fuera de la clase
+    """Construtor de la clase Producto i inicialización para los objetos producto
+    Construyo la clase Producto con atributos privados usando __xxxx  para conseguir un buen encapsulamiento
+    Con esta implementación evito accesos indeseados desde fuera de la clase"""
 
     def __init__ (self, nombre, categoria, precio, cantidad):
 
@@ -31,8 +31,10 @@ class Producto:
     def get_cantidad(self):
         return self.__cantidad
     
-    # Implementamos los métodos con setters para guardar datos de manera controlada en los atributos de la clase.
-    # Al mismo tiempo también doy validación a los datos para que cumplan con los requerimientos
+    """
+    Implemento los métodos con setters para guardar datos de manera controlada en los atributos de la clase.
+    Al mismo tiempo también doy validación a los datos para que cumplan con los requerimientos del enunciado
+    """
    
     def set_precio(self, nuevo_precio):
         if  nuevo_precio > 0:
@@ -46,8 +48,10 @@ class Producto:
         else:
             raise ValueError("La cantidad debe ser mayor o igual a 0")
         
-    # Uso la función STR para la clase producto para que los objetos de la clase se representen en pantalla
-    # mediante una cadena de texto maquetada cada vez que se les llame
+    """
+    Uso la función STR para la clase producto para que los objetos de la clase se representen en pantalla
+    mediante una cadena de texto maquetada cada vez que se les llame
+    """
     def __str__(self):
         return f"Nombre: {self.__nombre}, Categoria: {self.__categoria}, Precio: {self.__precio}, Cantidad: {self.__cantidad}"
     

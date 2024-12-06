@@ -1,9 +1,0 @@
-email = input ("Introduce tu eMail: ")
-
-arroba = email.count("@")
-
-if (arroba!=1 or email.rfind('@') == (len(email)-1) or email.find('@') == 0):
-    print("El correo electrónico no es válido")
-
-else:
-    print("El correo electrónico es válido")
