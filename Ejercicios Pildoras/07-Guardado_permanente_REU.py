@@ -9,7 +9,9 @@ class Persona:
         print("Se ha creado una persona nueva con el nombre de ", self.nombre)
 
     def __str__(self):
-        return "{} {} {}".format(self.nombre, self.genero, self.edad)
+        #return "{} {} {}".format(self.nombre, self.genero, self.edad)
+        return f"{self.nombre} {self.genero} {self.edad}"
+    
     
 class ListaPersonas:
 
@@ -53,7 +55,7 @@ class ListaPersonas:
 
 
 miLista=ListaPersonas()
-persona=Persona("Pepe", "Masculino", 19)
+persona=Persona("Juan", "Masculino", 19)
 miLista.agregarPersonas(persona)
 miLista.mostrarInfoFicheroExterno()
 
