@@ -21,8 +21,9 @@ miFrame=Frame()
 
 #miFrame.pack(side="right", anchor="n")
 
-miFrame.pack()
+#miFrame.pack(fill="y", expand="True")
 
+miFrame.pack()
 
 miFrame.config(bg="red")
 
