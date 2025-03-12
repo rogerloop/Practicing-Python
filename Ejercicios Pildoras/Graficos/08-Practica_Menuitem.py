@@ -28,13 +28,9 @@ archivoAyuda=Menu(barraMenu, tearoff=0)
 archivoAyuda.add_command(label="Licencia")
 archivoAyuda.add_command(label="Acerca de...")
 
-
 barraMenu.add_cascade(label="Archivo", menu=archivoArchivo)
 barraMenu.add_cascade(label="Edición", menu=archivoEdicion)
 barraMenu.add_cascade(label="Herramientas", menu=archivoHerramientas)
 barraMenu.add_cascade(label="Ayuda", menu=archivoAyuda)
-
-
-
 
 root.mainloop()
